@@ -41,6 +41,7 @@
     <developerConnection>scm:git:https://bitbucket.org/yildiz-engine-team/parent-feature-server</developerConnection>
     <url>https://bitbucket.org/yildiz-engine-team/parent-feature-server</url>
   </scm>
+
   <parent>
     <groupId>be.yildiz-games</groupId>
     <artifactId>parent</artifactId>
