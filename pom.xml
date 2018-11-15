@@ -32,7 +32,7 @@
   <url>https://bitbucket.org/yildiz-engine-team/parent-feature-server</url>
 
   <artifactId>parent-feature-server</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
 
   <packaging>pom</packaging>
   <inceptionYear>2017</inceptionYear>
@@ -45,7 +45,7 @@
   <parent>
     <groupId>be.yildiz-games</groupId>
     <artifactId>parent</artifactId>
-    <version>2.2.0-SNAPSHOT</version>
+    <version>2.2.2</version>
   </parent>
 
   <properties>
@@ -61,7 +61,7 @@
           <plugin>
             <groupId>org.liquibase</groupId>
             <artifactId>liquibase-maven-plugin</artifactId>
-            <version>3.5.3</version>
+            <version>3.6.2</version>
             <configuration>
               <changeLogFile>
                 ${basedir}/src/main/resources/database-memory-update-script.xml
@@ -82,7 +82,7 @@
               <dependency>
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
-                <version>1.4.196</version>
+                <version>1.4.197</version>
               </dependency>
             </dependencies>
           </plugin>
@@ -101,7 +101,7 @@
               <dependency>
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
-                <version>1.4.196</version>
+                <version>1.4.197</version>
               </dependency>
             </dependencies>
             <configuration>
