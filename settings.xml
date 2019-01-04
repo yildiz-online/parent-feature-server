@@ -29,6 +29,11 @@
       <username>${env.OSSRH_USER_TOKEN}</username>
       <password>${env.OSSRH_PWD_TOKEN}</password>
     </server>
+    <server>
+      <id>yildiz-nexus-release</id>
+      <username>${env.REPO_USER}</username>
+      <password>${env.REPO_PASSWORD}</password>
+    </server>
   </servers>
   <profiles>
     <profile>
@@ -60,12 +65,4 @@
       </repositories>
     </profile>
   </profiles>
-
-  <servers>
-    <server>
-      <id>yildiz-nexus-release</id>
-      <username>${env.REPO_USER}</username>
-      <password>${env.REPO_PASSWORD}</password>
-    </server>
-  </servers>
 </settings>
