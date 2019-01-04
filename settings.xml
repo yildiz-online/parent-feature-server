@@ -47,7 +47,25 @@
           </snapshots>
           <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
+        <repository>
+          <id>yildiz-nexus-release</id>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <url>https://nexus.yildiz-games.be/repository/Yildiz-Engine-Release/</url>
+        </repository>
       </repositories>
     </profile>
   </profiles>
+
+  <servers>
+    <server>
+      <id>yildiz-nexus-release</id>
+      <username>${env.REPO_USER}</username>
+      <password>${env.REPO_PASSWORD}</password>
+    </server>
+  </servers>
 </settings>
