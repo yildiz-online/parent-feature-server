@@ -84,6 +84,7 @@
               <driver>org.h2.Driver</driver>
               <url>jdbc:h2:${basedir}/target/database/LIQUIBASE;</url>
               <username>sa</username>
+              <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
             </configuration>
             <executions>
               <execution>
@@ -126,15 +127,15 @@
                 <user>sa</user>
               </jdbc>
               <generator>
-                <name>org.jooq.util.JavaGenerator</name>
+                <name>org.jooq.codegen.JavaGenerator</name>
                 <database>
-                  <name>org.jooq.util.h2.H2Database</name>
+                  <name>org.jooq.meta.h2.H2Database</name>
                   <includes>.*</includes>
                   <excludes>DATABASECHANGELOGLOCK | DATABASECHANGELOG</excludes>
                   <inputSchema>PUBLIC</inputSchema>
                 </database>
                 <target>
-                  <packageName>be.yildizgames.engine.feature.${feature.package}.generated.database</packageName>
+                  <packageName>be.yildizgames.engine.feature.${feature.package}.server.generated.database</packageName>
                   <directory>src/main/java</directory>
                 </target>
               </generator>
