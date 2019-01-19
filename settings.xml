@@ -59,6 +59,7 @@
           </releases>
           <snapshots>
             <enabled>false</enabled>
+            <updatePolicy>always</updatePolicy>
           </snapshots>
           <url>https://nexus.yildiz-games.be/repository/Yildiz-Engine-Release/</url>
         </repository>
