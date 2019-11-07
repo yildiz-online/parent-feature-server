@@ -76,7 +76,7 @@
           <plugin>
             <groupId>org.liquibase</groupId>
             <artifactId>liquibase-maven-plugin</artifactId>
-            <version>3.8.0</version>
+            <version>3.8.1</version>
             <configuration>
               <changeLogFile>
                 ${basedir}/src/main/resources/database-memory-update-script.xml
